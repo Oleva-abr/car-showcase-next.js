@@ -3,6 +3,7 @@ import CustomFilter from "./CustomFilter";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+import SearchManufacturer from "./SearchManufacturer";
 import Searchbar from "./Searchbar";
 
 export {
@@ -11,5 +12,6 @@ export {
     Navbar,
     Footer,
     Searchbar,
-    CustomFilter
+    CustomFilter,
+    SearchManufacturer
 }
