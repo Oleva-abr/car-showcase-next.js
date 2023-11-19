@@ -3,6 +3,7 @@ import { CarProps } from "@/types";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Image from "next/image";
+import { generateCarImageUrl } from "@/utils";
 
 interface CarDetailsProps {
   isOpen: boolean;
@@ -25,7 +26,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
           >
             <div className="fixed inset-0 bg-black bg-opacity-25"></div>
           </Transition.Child>
-          <div className="fixed inset-0 ooverflow-y-auto">
+          <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
@@ -57,7 +58,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                   <div className="dlex-1 flex flex-col gap-3">
                     <div className="relative w-full h-40 bg-pattern bg-cover bg-center roundrd-lg">
                       <Image
-                        src="/hero.png"
+                        src={generateCarImageUrl(car)}
                         fill
                         priority
                         alt="car model"
@@ -67,7 +68,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                     <div className="flex gap-3">
                       <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
                         <Image
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "29")}
                           fill
                           priority
                           alt="car model"
@@ -76,7 +77,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                       </div>
                       <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
                         <Image
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "33")}
                           fill
                           priority
                           alt="car model"
@@ -85,7 +86,7 @@ function CarDetails({ isOpen, closeModal, car }: CarDetailsProps) {
                       </div>
                       <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
                         <Image
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "13")}
                           fill
                           priority
                           alt="car model"
