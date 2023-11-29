@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import SearchManufacturer from "./SearchManufacturer";
-import SearchBar from "./SearchBar";
+import Searchbar from "./Searchbar";
 
 import ShowMore from "./ShowMore";
 
@@ -17,7 +17,7 @@ export {
     CustomButton,
     Navbar,
     Footer,
-    SearchBar,
+    Searchbar,
     CustomFilter,
     SearchManufacturer,
     CarCard,
