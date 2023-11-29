@@ -19,7 +19,7 @@ const SearchButton = ({ otherClasses }: { otherClasses: string }) => {
   );
 };
 
-function SearchBar() {
+function Searchbar() {
   const [manufacturer, setManufacturer] = useState("");
   const [model, setModel] = useState("");
   const router = useRouter();
@@ -85,4 +85,4 @@ function SearchBar() {
   );
 }
 
-export default SearchBar;
+export default Searchbar;
